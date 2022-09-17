@@ -1,9 +1,15 @@
 const fs = require("fs");
 const path = require("path");
 
-function createNote() {
+function createNote(body, notepad) {
   // logic to create a note
-  // return note;
+  const note = body;
+  // console.log(notepad);
+  fs.writeFileSync(
+    path.join(__dirname, "../db/db.json"),
+    JSON.stringify({ db: notepad }, null, 1)
+  );
+  return note;
 }
 
 module.exports = createNote;
