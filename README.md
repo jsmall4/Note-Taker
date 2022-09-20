@@ -18,10 +18,12 @@ https://github.com/jsmall4/Note-Taker
 
 # Heroku URL:
 
+https://peaceful-shelf-63926.herokuapp.com/
+
 # License
 
 MIT License
 
 # Bugs:
 
-Post functionality not working - didnt manage to finish delete either
+Didn't manage to finish delete either, & issue with deployed heroku app.
