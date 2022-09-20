@@ -23,7 +23,7 @@ app.get("/notes", (req, res) => {
 app.get("/api/notes", (req, res) => res.json(db));
 
 app.post("/api/notes", (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
   req.body.id = uuid();
   db.push(req.body);
   fs.writeFileSync(
